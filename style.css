@@ -1,12 +1,11 @@
 /* --- CSS VARIABLES & THEME SETUP --- */
 :root {
-    /* Default Dark Theme (Seperti Gambar 2) */
     --bg-primary: #0a0a0a;
-    --bg-secondary: #161616; /* Untuk kartu/timeline */
-    --bg-tertiary: #222222; /* Untuk tab/input */
+    --bg-secondary: #161616;
+    --bg-tertiary: #222222; 
     --text-primary: #ffffff;
     --text-secondary: #a1a1a1;
-    --accent-color: #ff80ab; /* Pink dari Gambar 1 */
+    --accent-color: #ff80ab; 
     --accent-hover: #ff4081;
     --border-color: #333333;
     --nav-height: 64px;
@@ -41,17 +40,17 @@ body {
     max-width: 900px;
     margin: 0 auto;
     padding: 2rem 1rem;
-    margin-top: var(--nav-height); /* Spasi untuk fixed navbar */
+    margin-top: var(--nav-height);
 }
 
-/* --- NAVBAR (Struktur Gambar 2) --- */
+/* --- NAVBAR --- */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: var(--nav-height);
-    background-color: rgba(10, 10, 10, 0.8); /* Semi-transparan */
+    background-color: rgba(10, 10, 10, 0.8);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -60,7 +59,6 @@ body {
     z-index: 100;
     border-bottom: 1px solid var(--border-color);
 }
-/* --- CSS untuk Custom Logo Vector --- */
 
 .nav-logo {
     display: flex;
@@ -103,7 +101,7 @@ body {
 
 .nav-item.active {
     background-color: var(--accent-color);
-    color: white; /* Selalu putih di pil aktif */
+    color: white;
 }
 
 #theme-toggle {
@@ -115,13 +113,12 @@ body {
     padding: 0.5rem;
 }
 
-/* Logika ikon tema */
 .theme-icon-dark { display: none; }
 [data-theme="light"] .theme-icon-light { display: none; }
-[data-theme="light"] .theme-icon-dark { display: inline-block; }
+[data-theme="dark"] .theme-icon-dark { display: none; }
 
 
-/* --- INTRO SECTION (Layout Gambar 1) --- */
+/* --- INTRO SECTION --- */
 .intro-section {
     padding: 3rem 0;
 }
@@ -149,7 +146,7 @@ body {
     height: 220px;
     margin: 0 auto 1.5rem;
     padding: 10px;
-    border: 3px dashed var(--accent-color); /* Frame pink putus-putus */
+    border: 3px dashed var(--accent-color);
     border-radius: 20px;
     background-color: var(--bg-secondary);
     box-shadow: 0 0 20px rgba(255, 128, 171, 0.2);

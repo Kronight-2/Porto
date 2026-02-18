@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     themeToggleBtn.addEventListener('click', () => {
         let theme = htmlElement.getAttribute('data-theme');
-        // Switch theme
         if (theme === 'dark') {
             theme = 'light';
         } else {
